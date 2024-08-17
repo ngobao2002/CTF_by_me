@@ -1,0 +1,90 @@
+/* CSS from your existing code */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--dark-color);
+}
+
+/* Container for mini blogs */
+.mini-blogs {
+    margin-top: 100px; /* Push content down from header */
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Mini blog styling */
+.mini-blog {
+    background: var(--light-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #fff; /* White border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center;
+}
+
+/* Hover effect for mini blog */
+.mini-blog:hover {
+    background: var(--main-color);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+/* Title and intro text styling */
+.mini-blog-title h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.mini-blog-title p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Hidden content for mini blog */
+.mini-blog-content {
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+/* Play button styling */
+.play-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.play-btn:hover {
+    background: var(--light-color);
+}
+
+/* Center the content in the middle of the screen */
+.new.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Adjust based on header height */
+}
